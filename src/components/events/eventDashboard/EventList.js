@@ -5,7 +5,7 @@ export default function EventList(props) {
 
   const renderItems = props.events.map((event) => {
     return (
-      <EventListItem key={event.id} event = {event} />
+      <EventListItem key={event.id} deleteEvent={props.deleteEvent} event = {event} selectEvent = {props.selectEvent} />
     )
   })
   
